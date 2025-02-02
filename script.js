@@ -47,6 +47,14 @@ function disableButtons() {
   rock.disabled = true;
   paper.disabled = true;
   scissors.disabled = true;
+
+
+  rock.style.color = "gray";
+  paper.style.color = "gray";
+  scissors.style.color = "gray";
+  rock.style.transform = "scale(1)";
+  paper.style.transform = "scale(1)";
+  scissors.style.transform = "scale(1)";
 }
 
 const rock = document.getElementById("rock");

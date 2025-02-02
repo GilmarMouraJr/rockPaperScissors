@@ -1,0 +1,62 @@
+:root {
+    --primary-background: blue;
+    --secondary-background: white;
+    --primary-color: white;
+    --text-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-background);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game {
+    background-color: var(--secondary-background);
+    padding: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 10px;
+
+}
+
+#buttons button {
+    background-color: var(--primary-color);
+    padding: 0.8vw;
+    border: 0;
+    margin: 0 1vw;
+    color: var(--text-color);
+    font-size: 3vw;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+#results {
+    margin-top: 2vw;
+    font-size: 1.3vw;
+}
+
+#score {
+    margin-top: 1vw;
+    font-weight: 700;
+}
+
+
